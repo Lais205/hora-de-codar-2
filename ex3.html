@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 3</title>
+</head>
+<body>
+    <script>
+        //   Faça um programa para ler 3 valores (considere que não serão informados valores iguais) e escrever o maior deles.
+        //
+      
+        var número1 = parseFloat(prompt('Informe um número:'));
+        var número2 = parseFloat(prompt('Informe outro número:'));
+        var número3 = parseFloat(prompt('Informe o último número:'));
+
+        let maiornúmero = número1;
+        if (número2 > maiornúmero) {
+        maiornúmero = número2; }
+        if (número3 > maiornúmero) {
+        maiornúmero = número3;
+        }
+        alert(`O maior número é ${maiornúmero}.`);
+    </script>
+</body>
+</html>

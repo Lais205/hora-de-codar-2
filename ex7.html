@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 7</title>
+</head>
+<body>
+    <script>
+        //     Faça um programa que leia 6 números que o usuário vai informar. Todos os números lidos com valor inferior a 72 devem ser somados. Escreva o valor final da soma efetuada e também todos valores que o usuário informou.
+        //
+      
+        let soma = 0;
+        let numeros = [];
+
+        for (let i = 0; i < 6; i++) {
+        const valor = parseFloat(prompt(`Me diga o ${i + 1}º valor:`));
+        numeros.push(valor);
+        if (valor < 72) {
+            soma += valor;
+        }
+        }
+
+        alert(`Números informados: ${numeros}.\nSoma dos números inferiores a 72: ${soma}.`);
+    </script>
+</body>
+</html>
